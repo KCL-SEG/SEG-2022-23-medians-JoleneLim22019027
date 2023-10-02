@@ -10,7 +10,7 @@ while True:
         if qty % 2 == 0:
             x = int(qty/2)
         else:
-            x = math.ceil((qty/2) - 1)
+            x = int(math.ceil((qty/2) - 1))
         median = numbers[x]
     except ValueError:
         print("Some input could not be converted to a number!")
